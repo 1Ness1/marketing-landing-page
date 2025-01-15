@@ -1,9 +1,11 @@
 import "./App.scss";
 
+import {Header} from "./components/header/header.tsx";
+
 function App() {
   return (
     <>
-      <h1 className="text-5xl-60">Hello world</h1>
+      <Header />
     </>
   )
 }
