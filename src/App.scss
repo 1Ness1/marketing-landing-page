@@ -1,0 +1,8 @@
+@use "./styles/colors";
+@use "./styles/fonts";
+
+$base-color: red;
+
+.title {
+  color: $base-color;
+}
