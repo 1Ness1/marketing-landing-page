@@ -1,6 +1,5 @@
-import "./styles.scss";
-
 import {PrimaryButton, SecondaryButton} from "../ui/buttons/buttons.tsx";
+import "./hero.scss";
 
 const Logo = <svg width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -22,26 +21,26 @@ export const Header = () => {
             <nav className="header__nav">
                 <ul className="header__list">
                     <li className="header__element">
-                        <a className="header__link text-mg" href="#">Home</a>
+                        <a className="header__link" href="#">Home</a>
                     </li>
                     <li className="header__element">
-                        <a className="header__link text-mg" href="#">Features</a>
+                        <a className="header__link" href="#">Features</a>
                     </li>
                     <li className="header__element">
-                        <a className="header__link text-mg" href="#">Pricing</a>
+                        <a className="header__link" href="#">Pricing</a>
                     </li>
                     <li className="header__element">
-                        <a className="header__link text-mg" href="#">About us</a>
+                        <a className="header__link" href="#">About us</a>
                     </li>
                     <li className="header__element">
-                        <a className="header__link text-mg" href="#">Contact</a>
+                        <a className="header__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
 
             <div className="header__controls">
-                <PrimaryButton>Learn more</PrimaryButton>
-                <SecondaryButton>See pricing</SecondaryButton>
+                <SecondaryButton className="header__secondary-button">Learn more</SecondaryButton>
+                <PrimaryButton className="header__primary-button">See pricing</PrimaryButton>
             </div>
 
         </header>

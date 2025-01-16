@@ -9,12 +9,12 @@ type ButtonProps = {
 
 export const PrimaryButton = ({children, className}: ButtonProps): ReactNode => {
     return (
-        <button className={cn("primary-button", className)} type="button">{children}</button>
+        <button className={cn("primary-button", "button", className)} type="button">{children}</button>
     )
 }
 
 export const SecondaryButton = ({children, className}: ButtonProps) => {
     return (
-        <button className={cn("secondary-button", className)} type="button">{children}</button>
+        <button className={cn("secondary-button", "button", className)} type="button">{children}</button>
     )
 }

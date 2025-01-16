@@ -1,5 +1,49 @@
+@import "./fonts";
+
 @mixin d-flex {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin text-mg {
+  font-family: $font-family;
+  font-size: $text-mg-size;
+  line-height: $text-mg-size;
+  font-weight: 400;
+}
+
+@mixin text-lg {
+  font-family: $font-family;
+  font-size: $text-lg-size;
+  line-height: $text-lg-size;
+  font-weight: 400;
+}
+
+@mixin text-xl {
+  font-family: $font-family;
+  font-size: $text-xl-size;
+  line-height: $text-xl-height;
+  font-weight: 400;
+}
+
+@mixin text-4xl {
+  font-family: $font-family;
+  font-size: $text-4xl-size;
+  line-height: $text-4xl-size;
+  font-weight: 500;
+}
+
+@mixin text-5xl-48 {
+  font-family: $font-family;
+  font-size: $text-5xl-48-size;
+  line-height: $text-5xl-48-size;
+  font-weight: 500;
+}
+
+@mixin text-5xl-60 {
+  font-family: $font-family;
+  font-size: $text-5xl-60-size;
+  line-height: $text-5xl-60-size;
+  font-weight: 600;
 }

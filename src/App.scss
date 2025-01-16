@@ -1,5 +1,5 @@
 @use "./styles/colors";
-@use "./styles/fonts";
+@import "./styles/fonts";
 
 @layer reset, defaults;
 
@@ -21,6 +21,26 @@
   li {
     list-style: none;
   }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @layer defaults {
@@ -30,5 +50,16 @@
     grid-template-columns: 1fr;
     min-height: 100vh;
     padding: 16px;
+    font-family: $font-family;
+  }
+
+  .main {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0 16px;
   }
 }

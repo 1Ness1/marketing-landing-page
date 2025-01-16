@@ -18,49 +18,16 @@
 
 $text-mg-size: 1rem;
 $text-lg-size: 1.125rem;
-$text-4xl-size: 2.25remm;
+$text-xl-size: 1.25rem;
+$text-4xl-size: 2.25rem;
 $text-5xl-48-size: 3rem;
 $text-5xl-60-size: 3.75rem;
 
 $text-mg-height: 1.5rem;
 $text-lg-height: 1.75rem;
+$text-xl-height: 1.75rem;
 $text-4xl-height: 2.5rem;
 $text-5xl-48-height: 1;
 $text-5xl-60-height: 1;
 
 $font-family: "Noto Sans", "Arial", sans-serif;
-
-.text-mg {
-  font-family: $font-family;
-  font-size: $text-mg-size;
-  line-height: $text-mg-size;
-  font-weight: 400;
-}
-
-.text-lg {
-  font-family: $font-family;
-  font-size: $text-lg-size;
-  line-height: $text-lg-size;
-  font-weight: 400;
-}
-
-.text-4xl {
-  font-family: $font-family;
-  font-size: $text-4xl-size;
-  line-height: $text-4xl-size;
-  font-weight: 500;
-}
-
-.text-5xl-48 {
-  font-family: $font-family;
-  font-size: $text-5xl-48-size;
-  line-height: $text-5xl-48-size;
-  font-weight: 500;
-}
-
-.text-5xl-60 {
-  font-family: $font-family;
-  font-size: $text-5xl-60-size;
-  line-height: $text-5xl-60-size;
-  font-weight: 600;
-}

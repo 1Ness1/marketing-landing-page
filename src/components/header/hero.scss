@@ -1,9 +1,11 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
 
 .header {
   max-width: 1215px;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   display: flex;
+  align-items: center;
   gap: 95px;
 
   &__list {
@@ -21,6 +23,8 @@
     text-decoration: none;
     color: $neutral-600;
 
+    @include text-mg;
+
     &:hover {
       color: $neutral-900;
     }
@@ -31,5 +35,17 @@
     display: flex;
     align-items: stretch;
     gap: 16px;
+  }
+
+  &__primary-button {
+    @include text-mg;
+    color: $white;
+    font-weight: 500;
+  }
+
+  &__secondary-button {
+    @include text-mg;
+    color: $neutral-900;
+    font-weight: 500;
   }
 }
