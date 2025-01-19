@@ -1,5 +1,5 @@
-import {PrimaryButton, SecondaryButton} from "../ui/buttons/buttons.tsx";
-import "./hero.scss";
+import Button from "@components/ui/buttons";
+import "./Header.scss";
 
 const Logo = <svg width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -11,7 +11,7 @@ const Logo = <svg width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns
 </svg>
 
 
-export const Header = () => {
+const Header = ()=>  {
     return (
         <header className="header">
             <a href="#" aria-label="Logo of the company">
@@ -39,10 +39,12 @@ export const Header = () => {
             </nav>
 
             <div className="header__controls">
-                <SecondaryButton className="header__secondary-button">Learn more</SecondaryButton>
-                <PrimaryButton className="header__primary-button">See pricing</PrimaryButton>
+                <Button className="header__secondary-button" variant="secondary-button">Learn more</Button>
+                <Button className="header__primary-button" variant="primary-button">See pricing</Button>
             </div>
 
         </header>
     )
 }
+
+export default Header;

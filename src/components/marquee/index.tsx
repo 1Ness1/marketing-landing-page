@@ -1,16 +1,16 @@
-import "./marquee.scss";
+import "./Marquee.scss";
 
-import wanNain from "../../assets/marquee/wan-nain.svg";
-import airCar from "../../assets/marquee/air-car.svg";
-import diamond from "../../assets/marquee/diamond.svg";
-import makroHard from "../../assets/marquee/makro-hard.svg";
-import robinWood from "../../assets/marquee/robin-wood.svg";
-import swapdo from "../../assets/marquee/swapdo.svg";
-import wirang from "../../assets/marquee/wirang.svg";
+import wanNain from "@/assets/marquee/wan-nain.svg";
+import airCar from "@/assets/marquee/air-car.svg";
+import diamond from "@/assets/marquee/diamond.svg";
+import makroHard from "@/assets/marquee/makro-hard.svg";
+import robinWood from "@/assets/marquee/robin-wood.svg";
+import swapdo from "@/assets/marquee/swapdo.svg";
+import wirang from "@/assets/marquee/wirang.svg";
 
-export const Marquee = () => {
+ const Marquee = () => {
     return (
-        <section className="marquee">
+        <section className="marquee container">
             <h2 className="visually-hidden">Our collaborators</h2>
             <p className="marquee__title">Used by teams that you love</p>
 
@@ -40,3 +40,5 @@ export const Marquee = () => {
         </section>
     )
 }
+
+export default Marquee;

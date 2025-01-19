@@ -1,9 +1,10 @@
 import "./App.scss";
 
-import {Header} from "./components/header/header.tsx";
-import {Hero} from "./components/hero/hero.tsx";
-import {Marquee} from "./components/marquee/marquee.tsx";
-import {FeaturesGrid, FeaturesSideRight, FeaturesSideLeft} from "./components/features/features.tsx";
+import Header from "@components/header";
+import Hero from "@components/hero";
+import Marquee from "@components/marquee";
+import {FeaturesGrid, FeaturesSideRight, FeaturesSideLeft} from "@components/features";
+import Price from "@components/price";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <FeaturesGrid />
             <FeaturesSideRight />
             <FeaturesSideLeft />
+            <Price />
         </main>
     </>
   )

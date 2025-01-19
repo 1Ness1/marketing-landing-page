@@ -1,7 +1,7 @@
-import {PrimaryButton, SecondaryButton} from "../ui/buttons/buttons.tsx";
-import "./hero.scss";
+import Button from "@components/ui/buttons";
+import "./Hero.scss";
 
-export const Hero = () => {
+const Hero = () => {
     return (
         <section className="hero container">
             <h1 className="visually-hidden">Very expensive images for every one.</h1>
@@ -14,8 +14,8 @@ export const Hero = () => {
                 </div>
 
                 <div className="hero__button-container">
-                    <SecondaryButton className="hero__primary-button">Learn more</SecondaryButton>
-                    <PrimaryButton className="hero__secondary-button">See pricing</PrimaryButton>
+                    <Button className="hero__primary-button" variant="secondary-button">Learn more</Button>
+                    <Button className="hero__secondary-button" variant="primary-button">See pricing</Button>
                 </div>
             </div>
 
@@ -25,3 +25,5 @@ export const Hero = () => {
         </section>
     )
 }
+
+export default Hero;

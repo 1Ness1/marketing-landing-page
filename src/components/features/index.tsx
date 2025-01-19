@@ -7,8 +7,8 @@ import {
     EmpoweringIcon,
     NoLimitationIcon,
     HdIcon, WaterIcon, OrientationIcon, ConvenienceIcon, RoyaltyIcon, FasterDownloadsIcon
-} from "../ui/icons/icons.tsx";
-import "./features.scss";
+} from "@components/ui/icons/icons.tsx";
+import "./Features.scss";
 import {ReactNode} from "react";
 
 type FeaturesSideProps = {
@@ -92,7 +92,7 @@ export const FeaturesGrid = () => {
                 </li>
             </ul>
         </div>
-)
+    )
 }
 
 export const FeaturesSideRight = () => {
