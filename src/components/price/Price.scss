@@ -3,6 +3,10 @@
 
 .price {
   padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+
   &__subtitle {
     @include text-mg;
     font-weight: 600;
@@ -35,5 +39,105 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  &__element {
+    min-height: 675px;
+    background: $white;
+    border: 1px solid $neutral-200;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+
+    &--active {
+      border: 1px solid $indigo-600;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+      .price__time,
+      .price__value {
+        color: $indigo-700;
+      }
+    }
+  }
+  
+  &__element-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 32px;
+  }
+
+  &__label {
+    @include d-flex;
+    padding: 16px 0;
+    background: #EEF2FF;
+    border-radius: 7px;
+  }
+
+
+  &__element-title {
+    @include text-xl;
+    color: #030712;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__element-description {
+    @include text-mg;
+    color: $neutral-600;
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+
+  &__value {
+    @include text-5xl-48;
+    font-weight: 600;
+    color: $neutral-900;
+  }
+
+  &__time {
+    @include text-mg;
+    color: $neutral-900;
+  }
+
+  &__value-description {
+    @include text-mg;
+    color: $neutral-600;
+    margin-top: 8px;
+  }
+
+  &__sublist-element {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

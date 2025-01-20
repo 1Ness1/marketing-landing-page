@@ -5,6 +5,9 @@ import Hero from "@components/hero";
 import Marquee from "@components/marquee";
 import {FeaturesGrid, FeaturesSideRight, FeaturesSideLeft} from "@components/features";
 import Price from "@components/price";
+import Faq from "@components/faq";
+import Newsletter from "@components/newsletter";
+import Contact from "@components/contact";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <FeaturesSideRight />
             <FeaturesSideLeft />
             <Price />
+            <Faq />
+            <Newsletter />
+            <Contact />
         </main>
     </>
   )

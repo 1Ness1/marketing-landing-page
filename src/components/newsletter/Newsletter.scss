@@ -1,0 +1,74 @@
+@import "@styles/mixins";
+@import "@styles/fonts";
+@import "@styles/colors";
+
+.newsletter {
+  padding: 96px 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &__container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__title {
+    @include text-5xl-48;
+    color: $neutral-900;
+    font-weight: 600;
+    margin-bottom: 65px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__form-container {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  &__input {
+    padding: 10px 14px;
+    max-width: 335px;
+    width: 100%;
+    height: 40px;
+    background: #FAFAFA;
+    border: 1px solid $neutral-200;
+    border-radius: 4px;
+    @include text-mg;
+    color: $neutral-900;
+
+
+    &::placeholder {
+      color: $neutral-600;
+    }
+  }
+
+  &__submit {
+    min-height: 40px;
+    min-width: 100px;
+  }
+
+  &__form-label {
+    @include text-mg;
+    color: $neutral-600;
+  }
+}
