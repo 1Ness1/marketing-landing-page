@@ -1,0 +1,114 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.features {
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  &__subtitle {
+    @include text-mg;
+    color: $indigo-700;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    @include text-5xl-48;
+    color: $neutral-900;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include text-xl;
+    color: $neutral-600;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__element-title {
+    @include text-xl;
+    color: $neutral-900;
+    font-weight: 600;
+  }
+
+  &__element-description {
+    @include text-xl;
+    color: $neutral-600;
+  }
+}
+
+.features-grid {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__element {
+    gap: 20px;
+  }
+}
+
+.features-side {
+  &.left {
+    .features-side__container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .features-side__element {
+    display: flex;
+    gap: 20px;
+  }
+
+  .features__content-container {
+    align-items: flex-start;
+  }
+
+  &__list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__image-container {
+    width: 50%;
+
+  }
+
+  &__img {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: local("../assets/fonts/NotoSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("../assets/fonts/NotoSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("../assets/fonts/NotoSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+$text-mg-size: 1rem;
+$text-lg-size: 1.125rem;
+$text-xl-size: 1.25rem;
+$text-4xl-size: 2.25rem;
+$text-5xl-48-size: 3rem;
+$text-5xl-60-size: 3.75rem;
+
+$text-mg-height: 1.5rem;
+$text-lg-height: 1.75rem;
+$text-xl-height: 1.75rem;
+$text-4xl-height: 2.5rem;
+$text-5xl-48-height: 1;
+$text-5xl-60-height: 1;
+
+$font-family: "Noto Sans", "Arial", sans-serif;

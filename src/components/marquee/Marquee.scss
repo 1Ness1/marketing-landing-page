@@ -1,0 +1,59 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.marquee {
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    @include text-mg;
+    text-align: center;
+    width: 100%;
+    color: $neutral-600;
+  }
+
+  &__element {
+    width: 220px;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  @media (max-width: 1700px) {
+    &__element {
+      animation-name: slide;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes slide-then-hide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    display: none;
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
